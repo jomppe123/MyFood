@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="com.example.jomppe.googlesigninoikee.SignInActivity">
+
+
+        <item
+            android:id="@+id/kartta"
+            android:icon="@drawable/ic_map"
+            android:title="@string/kartta" />
+
+        <item
+            android:id="@+id/kolmas"
+            android:icon="@drawable/ic_add_a_photo"
+            android:title="@string/kolmas" />
+
+        <item
+            android:id="@+id/profiili"
+            android:icon="@drawable/ic_account_circle"
+            android:title="@string/profiili" />
+
+        <!--<item-->
+            <!--android:id="@+id/testi4"-->
+            <!--android:icon="@drawable/ic_account_balance"-->
+            <!--android:title="@string/testi4" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/testi5"-->
+            <!--android:icon="@drawable/ic_3d_rotation"-->
+            <!--android:title="@string/testi5" />-->
+
+
+</menu>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GoogleSignInOikee</string>
+    <string name="action_map">map</string>
+    <string name="action_dial">dial</string>
+    <string name="action_mail">mail</string>
+    <string name="title_activity_my_food">MyFood</string>
+    <string name="kolmas">kolmas</string>
+    <string name="kartta">kartta</string>
+    <string name="profiili">profiili</string>
+    <string name="testi4">testi4</string>
+    <string name="testi5">testi5</string>
+</resources>

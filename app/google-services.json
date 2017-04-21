@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "581759418362",
+    "project_id": "myfoodoikee"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581759418362:android:b94116c473cc7bdd",
+        "android_client_info": {
+          "package_name": "com.example.jomppe.googlesigninoikee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581759418362-ovksc7a96h1drih5616h5paa3b9m2rut.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jomppe.googlesigninoikee",
+            "certificate_hash": "F42B84D698040803B7B8666C706957B02AF5BFC5"
+          }
+        },
+        {
+          "client_id": "581759418362-r0727ck53d9b27dfu0qah0kfss2v7uje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9Gh3YfwFP54nXtQddAupHUV7lrNNbAQo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
