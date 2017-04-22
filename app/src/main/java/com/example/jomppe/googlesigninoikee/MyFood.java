@@ -21,6 +21,7 @@ public class MyFood extends AppCompatActivity {
 
 //joo kiva ku kävit
         //eiks oolkkkkkkki
+        //asaassd
     }
 
 
