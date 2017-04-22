@@ -19,9 +19,7 @@ public class MyFood extends AppCompatActivity {
         setContentView(R.layout.activity_my_food);
 
 
-//joo kiva ku kävit
-        //eiks oolkkkkkkki
-        //asaassd
+
     }
 
 
@@ -30,4 +28,3 @@ public class MyFood extends AppCompatActivity {
     }
 }
 
-//sadadsadsdasasddaasd
