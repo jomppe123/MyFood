@@ -24,7 +24,7 @@
         android:id="@+id/MainText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="57dp"
         android:text="MyFood"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:layout_alignParentTop="true"
