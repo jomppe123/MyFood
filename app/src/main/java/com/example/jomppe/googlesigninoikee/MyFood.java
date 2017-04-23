@@ -35,6 +35,9 @@ public class MyFood extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 liha.setText("Lihahaha");
+                kala.setVisibility(View.INVISIBLE);
+                peruna.setVisibility(View.INVISIBLE);
+                liha.setVisibility(View.VISIBLE);
             }
         });
 
@@ -42,6 +45,9 @@ public class MyFood extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 kala.setText("kallahaha");
+                liha.setVisibility(View.INVISIBLE);
+                peruna.setVisibility(View.INVISIBLE);
+                kala.setVisibility(View.VISIBLE);
 
             }
         });
@@ -51,6 +57,9 @@ public class MyFood extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 peruna.setText("perunanhah");
+                kala.setVisibility(View.INVISIBLE);
+                liha.setVisibility(View.INVISIBLE);
+                peruna.setVisibility(View.VISIBLE);
 
             }
         });
