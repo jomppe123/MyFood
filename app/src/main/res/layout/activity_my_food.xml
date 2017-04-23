@@ -57,21 +57,43 @@
         android:text="Peruna"
         android:layout_marginLeft="29dp"
         android:layout_marginStart="29dp"
-        android:layout_above="@+id/textView"
+        android:layout_above="@+id/lihatv"
         android:layout_toRightOf="@+id/KalaButton"
         android:layout_toEndOf="@+id/KalaButton" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/lihatv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LOREMIPSUMDOLORLOREMIPSUm"
+        android:text=""
         android:layout_below="@+id/LihaButton"
         android:layout_alignLeft="@+id/LihaButton"
         android:layout_alignStart="@+id/LihaButton"
         android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/LihaButton"
+        android:layout_alignEnd="@+id/LihaButton" />
+
+    <TextView
+        android:id="@+id/kalatv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lihatv"
+        android:text=""
+        android:layout_toLeftOf="@+id/PerunaButton"
+        android:layout_alignLeft="@+id/KalaButton"
+        android:layout_alignStart="@+id/KalaButton"
+        android:layout_alignBottom="@+id/lihatv" />
+
+    <TextView
+        android:id="@+id/perunatv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/kalatv"
+        android:text=""
         android:layout_alignRight="@+id/PerunaButton"
-        android:layout_alignEnd="@+id/PerunaButton" />
+        android:layout_alignEnd="@+id/PerunaButton"
+        android:layout_alignLeft="@+id/PerunaButton"
+        android:layout_alignStart="@+id/PerunaButton" />
 
 </RelativeLayout>
 

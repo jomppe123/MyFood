@@ -94,9 +94,6 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         if (result.isSuccess()) {
             // Signed in successfully, show authenticated UI.
             GoogleSignInAccount acct = result.getSignInAccount();
-            Intent intent2 = new Intent(SignInActivity.this, MyFood.class);
-            SignInActivity.this.startActivity(intent2);
-            finish();
             updateUI(true);
 
         } else {
@@ -109,8 +106,6 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
     {
         if (isLogin)
         {
-            Intent intent2 = new Intent(SignInActivity.this, MyFood.class);
-            SignInActivity.this.startActivity(intent2);
         }
         else
         {
