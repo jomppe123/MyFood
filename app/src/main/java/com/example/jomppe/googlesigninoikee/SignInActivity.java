@@ -78,6 +78,9 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+        Intent intent3 = new Intent(SignInActivity.this, MyFood.class);
+        SignInActivity.this.startActivity(intent3);
+
         // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
         if (requestCode == RC_SIGN_IN) {
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
@@ -91,6 +94,9 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         if (result.isSuccess()) {
             // Signed in successfully, show authenticated UI.
             GoogleSignInAccount acct = result.getSignInAccount();
+            Intent intent2 = new Intent(SignInActivity.this, MyFood.class);
+            SignInActivity.this.startActivity(intent2);
+            finish();
             updateUI(true);
 
         } else {
@@ -103,7 +109,8 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
     {
         if (isLogin)
         {
-
+            Intent intent2 = new Intent(SignInActivity.this, MyFood.class);
+            SignInActivity.this.startActivity(intent2);
         }
         else
         {
