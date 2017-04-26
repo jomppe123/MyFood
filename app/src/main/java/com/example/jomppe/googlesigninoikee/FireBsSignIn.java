@@ -45,7 +45,7 @@ public class FireBsSignIn extends AppCompatActivity{
 //            finish();
 //            startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
 //        }
-
+// joo
         firebaseAuth = FirebaseAuth.getInstance();
 
         progressDialog = new ProgressDialog(this);
