@@ -1,6 +1,7 @@
 package com.example.jomppe.googlesigninoikee;
 
 import android.content.Intent;
+
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -43,7 +44,7 @@ public class GoogleFBLogIn extends AppCompatActivity implements GoogleApiClient.
 
 
 
-        buttonEkaActivity = (Button) findViewById(R.id.buttonRegister);
+        buttonEkaActivity = (Button) findViewById(R.id.buttonEkaActivity);
         buttonEkaActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,7 +53,7 @@ public class GoogleFBLogIn extends AppCompatActivity implements GoogleApiClient.
             }
         });
 
-        textViewSignin = (TextView)findViewById(R.id.textViewSinginEka);
+        textViewSignin = (TextView)findViewById(R.id.textViewSigninEka);
         textViewSignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

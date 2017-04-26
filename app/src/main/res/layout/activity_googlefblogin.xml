@@ -69,7 +69,7 @@
         <TextView
             android:textAlignment="center"
             android:text="Oletko jo rekisteröitynyt? Kirjaudu sisään täältä"
-            android:id="@+id/textViewSinginEka"
+            android:id="@+id/textViewSigninEka"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

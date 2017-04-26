@@ -39,21 +39,22 @@ public class FireBsSignIn extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firebssignin);
 
+        firebaseAuth = FirebaseAuth.getInstance();
 
-//        if (firebaseAuth.getCurrentUser() != null){
+//        if (firebaseAuth != null && firebaseAuth.getCurrentUser() != null){
 //            //profile activity here
 //            finish();
 //            startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
 //        }
-// joo
-        firebaseAuth = FirebaseAuth.getInstance();
+
+
 
         progressDialog = new ProgressDialog(this);
 
         editTextEmail = (EditText)findViewById(R.id.editTextEmail);
         editTextPassword = (EditText)findViewById(R.id.editTextPassword);
 
-        buttonSignin = (Button) findViewById(R.id.buttonRegister);
+        buttonSignin = (Button) findViewById(R.id.buttonSignin);
         buttonSignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

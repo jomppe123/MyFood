@@ -21,18 +21,22 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-//        if (firebaseAuth.getCurrentUser() == null){
+        firebaseAuth = FirebaseAuth.getInstance();
+
+//        if (firebaseAuth != null && firebaseAuth.getCurrentUser() != null){
 //            finish();
 //            startActivity(new Intent(this, FireBsSignIn.class));
 //        }
 
-        firebaseAuth = FirebaseAuth.getInstance();
+
 
         FirebaseUser user = firebaseAuth.getCurrentUser();
 
-        textViewUserEmail.setText("Tervetuloa "+user.getEmail());
-
         textViewUserEmail = (TextView)findViewById(R.id.textViewUserEmail);
+
+        textViewUserEmail.setText("Tervetuloa " +user.getEmail());
+
+
         buttonLogout = (Button) findViewById(R.id.buttonLogout);
 
         buttonLogout.setOnClickListener(new View.OnClickListener() {
