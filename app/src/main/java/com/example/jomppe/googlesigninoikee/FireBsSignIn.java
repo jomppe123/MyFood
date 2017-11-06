@@ -3,6 +3,7 @@ package com.example.jomppe.googlesigninoikee;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -23,8 +24,9 @@ public class FireBsSignIn extends AppCompatActivity{
 
     private Button buttonSignin;
     private EditText editTextEmail;
-    private EditText editTextPassword;
+
     private TextView textViewSignup;
+    private TextInputEditText editTextPassword;
 
 
     private ProgressDialog progressDialog;
@@ -52,7 +54,7 @@ public class FireBsSignIn extends AppCompatActivity{
         progressDialog = new ProgressDialog(this);
 
         editTextEmail = (EditText)findViewById(R.id.editTextEmail);
-        editTextPassword = (EditText)findViewById(R.id.editTextPassword);
+        editTextPassword = (TextInputEditText) findViewById(R.id.editTextPassword);
 
         buttonSignin = (Button) findViewById(R.id.buttonSignin);
         buttonSignin.setOnClickListener(new View.OnClickListener() {
@@ -94,7 +96,7 @@ public class FireBsSignIn extends AppCompatActivity{
         //if validations is ok
         //We will first show a progressDialog
 
-        progressDialog.setMessage("Rekisteröidään käyttäjää...");
+        progressDialog.setMessage("Kirjaudutaan...");
         progressDialog.show();
 
         firebaseAuth.signInWithEmailAndPassword(email,password)

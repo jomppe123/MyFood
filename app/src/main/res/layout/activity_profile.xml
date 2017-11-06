@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.jomppe.googlesigninoikee.ProfileActivity">
 
     <LinearLayout
@@ -14,7 +15,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
-
 
         <TextView
             android:id="@+id/textViewUserEmail"
@@ -29,14 +29,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Etunimi Sukunimi"/>
+
         <EditText
             android:id="@+id/editTextAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="osoite"/>
+            android:hint="osoite" />
 
         <EditText
             android:id="@+id/editTextNumber"
+            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Puhelinnumero"/>
@@ -54,5 +56,7 @@
             android:layout_gravity="center_horizontal"
             android:text="Kirjaudu ulos"
             android:textAllCaps="false" />
+
     </LinearLayout>
+
 </RelativeLayout>

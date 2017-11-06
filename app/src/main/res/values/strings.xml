@@ -9,4 +9,7 @@
     <string name="profiili">profiili</string>
     <string name="testi4">testi4</string>
     <string name="testi5">testi5</string>
+    <string name="SignInFirebase">Kirjautuminen</string>
+    <string name="doesntRegisteredYet">Etkö ole vielä rekisteröitynyt?</string>
+    <string name="syotasalasanasi">Syötä salasanasi</string>
 </resources>
