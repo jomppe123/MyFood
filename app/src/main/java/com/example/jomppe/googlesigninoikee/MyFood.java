@@ -1,10 +1,15 @@
 package com.example.jomppe.googlesigninoikee;
 
+import android.support.annotation.NonNull;
+import android.support.design.internal.BottomNavigationItemView;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MyFood extends AppCompatActivity {
 
@@ -21,6 +26,26 @@ public class MyFood extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_food);
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView)findViewById(R.id.bottomNavigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+
+                    case R.id.action_add:
+                        Toast.makeText(MyFood.this,"Action add clicked!", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.action_edit:
+                        Toast.makeText(MyFood.this,"Action edit clicked!", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.action_remove:
+                        Toast.makeText(MyFood.this,"Action remoce clicked!", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+                return true;
+            }
+        });
 
         liha = (TextView)findViewById(R.id.lihatv);
         kala = (TextView)findViewById(R.id.kalatv);
