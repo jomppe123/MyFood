@@ -27,33 +27,34 @@ public class MyFood extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_food);
 
-        BottomNavigationView bottomNavigationView = (BottomNavigationView)findViewById(R.id.bottomNavigation);
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
 
                     case R.id.action_add:
-                        Toast.makeText(MyFood.this,"Action add clicked!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MyFood.this, "Action add clicked!", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_edit:
-                        Toast.makeText(MyFood.this,"Action edit clicked!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MyFood.this, "Action edit clicked!", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_remove:
-                        Toast.makeText(MyFood.this,"Action remoce clicked!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MyFood.this, "Action remoce clicked!", Toast.LENGTH_SHORT).show();
                         break;
                 }
                 return true;
             }
         });
 
-        liha = (TextView)findViewById(R.id.lihatv);
-        kala = (TextView)findViewById(R.id.kalatv);
-        peruna = (TextView)findViewById(R.id.perunatv);
+        liha = (TextView) findViewById(R.id.lihatv);
+        kala = (TextView) findViewById(R.id.kalatv);
+        peruna = (TextView) findViewById(R.id.perunatv);
 
         lihabtn = (Button) findViewById(R.id.LihaButton);
         kalabtn = (Button) findViewById(R.id.KalaButton);
-        perunabtn = (Button)findViewById(R.id.PerunaButton);
+        perunabtn = (Button) findViewById(R.id.PerunaButton);
 
 
         lihabtn.setOnClickListener(new View.OnClickListener() {
@@ -88,7 +89,6 @@ public class MyFood extends AppCompatActivity {
 
             }
         });
-
 
 
     }

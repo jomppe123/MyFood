@@ -5,9 +5,8 @@
     android:id="@+id/content_my_food"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_collapseParallaxMultiplier="1.0"
     android:layout_alignParentTop="true"
-    >
+    app:layout_collapseParallaxMultiplier="1.0">
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottomNavigation"
@@ -19,8 +18,7 @@
         app:itemBackground="@color/colorPrimary"
         app:itemIconTint="@drawable/nav_item_color_state"
         app:itemTextColor="@drawable/nav_item_color_state"
-        app:menu="@menu/bottom_navigation_main"
-        />
+        app:menu="@menu/bottom_navigation_main" />
 
     <Button
         android:id="@+id/SignOutButton"
@@ -30,35 +28,35 @@
         android:layout_centerHorizontal="true"
         android:text="Sign Out"
         tools:ignore="InefficientWeight" />
+
     <Button
         android:id="@+id/LihaButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_marginTop="34dp"
         android:text="Liha"
-        tools:text="Halkolan tila"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        tools:text="Halkolan tila" />
 
     <Button
         android:id="@+id/KalaButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jaakkolan tila"
-        android:layout_marginTop="14dp"
         android:layout_below="@+id/lihatv"
-        />
+        android:layout_marginTop="14dp"
+        android:text="Jaakkolan tila" />
 
     <Button
         android:id="@+id/PerunaButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aholammen tila"
-        android:layout_marginTop="34dp"
-        android:layout_below="@+id/kalatv"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/kalatv"
+        android:layout_marginTop="34dp"
+        android:text="Aholammen tila" />
 
     <TextView
         android:id="@+id/lihatv"
