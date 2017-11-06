@@ -108,7 +108,7 @@ public class FireBsSignIn extends AppCompatActivity{
                         if (task.isSuccessful()){
                             //start profile activity
                             finish();
-                            startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
+                            startActivity(new Intent(getApplicationContext(),MyFood.class));
 
                         }
                     }

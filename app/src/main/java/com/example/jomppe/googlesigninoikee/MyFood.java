@@ -1,5 +1,6 @@
 package com.example.jomppe.googlesigninoikee;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.internal.BottomNavigationItemView;
 import android.support.design.widget.BottomNavigationView;
@@ -8,6 +9,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +18,8 @@ public class MyFood extends AppCompatActivity {
     private TextView liha;
     private TextView kala;
     private TextView peruna;
+
+    private ImageButton imgbtnSettings;
 
     private Button lihabtn;
     private Button kalabtn;
@@ -51,6 +55,14 @@ public class MyFood extends AppCompatActivity {
         liha = (TextView) findViewById(R.id.lihatv);
         kala = (TextView) findViewById(R.id.kalatv);
         peruna = (TextView) findViewById(R.id.perunatv);
+
+        imgbtnSettings = (ImageButton)findViewById(R.id.imgbtnSettings);
+        imgbtnSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
+            }
+        });
 
         lihabtn = (Button) findViewById(R.id.LihaButton);
         kalabtn = (Button) findViewById(R.id.KalaButton);
