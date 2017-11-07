@@ -15,12 +15,15 @@ import android.widget.Toast;
 
 public class MyFood extends AppCompatActivity {
 
+    //textViews
     private TextView liha;
     private TextView kala;
     private TextView peruna;
 
+    //ImageButtons
     private ImageButton imgbtnSettings;
 
+    //Buttons
     private Button lihabtn;
     private Button kalabtn;
     private Button perunabtn;
@@ -31,7 +34,7 @@ public class MyFood extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_food);
 
-
+        //BottomBarNAvigation onClickListener
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

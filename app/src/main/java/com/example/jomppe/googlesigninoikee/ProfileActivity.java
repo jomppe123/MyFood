@@ -75,6 +75,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     }
 
+    //save data to firebase database
      private void saveUserInformation(){
 
          String name = editTextName.getText().toString().trim();
