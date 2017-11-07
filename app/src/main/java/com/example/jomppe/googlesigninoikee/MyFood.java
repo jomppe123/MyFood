@@ -16,17 +16,12 @@ import android.widget.Toast;
 public class MyFood extends AppCompatActivity {
 
     //textViews
-    private TextView liha;
-    private TextView kala;
-    private TextView peruna;
 
     //ImageButtons
     private ImageButton imgbtnSettings;
 
     //Buttons
-    private Button lihabtn;
-    private Button kalabtn;
-    private Button perunabtn;
+
 
 
     @Override
@@ -48,16 +43,15 @@ public class MyFood extends AppCompatActivity {
                         Toast.makeText(MyFood.this, "Action edit clicked!", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_remove:
-                        Toast.makeText(MyFood.this, "Action remoce clicked!", Toast.LENGTH_SHORT).show();
+                        //will open login activity here
+                        Intent intentin = new Intent(MyFood.this, ProfileActivity.class);
+                        MyFood.this.startActivity(intentin);
                         break;
                 }
                 return true;
             }
         });
 
-        liha = (TextView) findViewById(R.id.lihatv);
-        kala = (TextView) findViewById(R.id.kalatv);
-        peruna = (TextView) findViewById(R.id.perunatv);
 
         imgbtnSettings = (ImageButton)findViewById(R.id.imgbtnSettings);
         imgbtnSettings.setOnClickListener(new View.OnClickListener() {
@@ -67,43 +61,9 @@ public class MyFood extends AppCompatActivity {
             }
         });
 
-        lihabtn = (Button) findViewById(R.id.LihaButton);
-        kalabtn = (Button) findViewById(R.id.KalaButton);
-        perunabtn = (Button) findViewById(R.id.PerunaButton);
 
 
-        lihabtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                liha.setText("Lihahaha");
-                kala.setVisibility(View.INVISIBLE);
-                peruna.setVisibility(View.INVISIBLE);
-                liha.setVisibility(View.VISIBLE);
-            }
-        });
 
-        kalabtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                kala.setText("kallahaha");
-                liha.setVisibility(View.INVISIBLE);
-                peruna.setVisibility(View.INVISIBLE);
-                kala.setVisibility(View.VISIBLE);
-
-            }
-        });
-
-
-        perunabtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                peruna.setText("perunanhah");
-                kala.setVisibility(View.INVISIBLE);
-                liha.setVisibility(View.INVISIBLE);
-                peruna.setVisibility(View.VISIBLE);
-
-            }
-        });
 
 
     }

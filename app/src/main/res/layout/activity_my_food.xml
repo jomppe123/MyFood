@@ -18,85 +18,29 @@
         app:itemBackground="@color/colorPrimary"
         app:itemIconTint="@drawable/nav_item_color_state"
         app:itemTextColor="@drawable/nav_item_color_state"
-        app:menu="@menu/bottom_navigation_main" />
+        app:menu="@menu/bottom_navigation_main" >
+
+    </android.support.design.widget.BottomNavigationView>
 
     <Button
         android:id="@+id/SignOutButton"
         android:layout_width="wrap_content"
         android:layout_height="66dp"
-        android:layout_below="@+id/perunatv"
+        android:layout_above="@+id/bottomNavigation"
         android:layout_centerHorizontal="true"
-        android:text="Sign Out"
-        tools:ignore="InefficientWeight" />
-
-    <Button
-        android:id="@+id/LihaButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="34dp"
-        android:text="Liha"
-        tools:text="Halkolan tila" />
-
-    <Button
-        android:id="@+id/KalaButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lihatv"
-        android:layout_marginTop="14dp"
-        android:text="Jaakkolan tila" />
-
-    <Button
-        android:id="@+id/PerunaButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/kalatv"
-        android:layout_marginTop="34dp"
-        android:text="Aholammen tila" />
-
-    <TextView
-        android:id="@+id/lihatv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/LihaButton"
-        android:layout_alignStart="@+id/LihaButton"
-        android:layout_below="@+id/LihaButton"
-        android:layout_marginLeft="27dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="20dp" />
-
-    <TextView
-        android:id="@+id/kalatv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/lihatv"
-        android:layout_alignRight="@+id/lihatv"
-        android:layout_below="@+id/KalaButton"
-        android:layout_marginTop="18dp" />
-
-    <TextView
-        android:id="@+id/perunatv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lihatv"
-        android:layout_alignStart="@+id/lihatv"
-        android:layout_below="@+id/PerunaButton"
-        android:layout_marginTop="21dp" />
+        android:layout_marginBottom="143dp"
+        android:text="Sign Out" />
 
     <ImageButton
         android:id="@+id/imgbtnSettings"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
-        android:layout_marginTop="21dp"
+        android:layout_above="@+id/SignOutButton"
+        android:layout_marginBottom="115dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_toEndOf="@+id/SignOutButton"
+        android:layout_toRightOf="@+id/SignOutButton"
         app:srcCompat="@mipmap/ic_settings" />
 
 </RelativeLayout>
