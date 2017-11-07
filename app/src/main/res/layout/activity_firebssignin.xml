@@ -1,81 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.jomppe.googlesigninoikee.MyFood"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin">
+    android:padding="29dp"
+    android:background="@color/firebasesigninBackground"
+    tools:context="com.example.jomppe.googlesigninoikee.MyFood">
 
-    <TextView
-        android:id="@+id/MainText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MyFood"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <LinearLayout
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:orientation="vertical"
+        android:layout_marginTop="51dp"
+        app:srcCompat="@drawable/firebaselogo" />
+    <EditText
+        android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linearLayout">
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:hint="Email..."
+        android:inputType="textEmailAddress"
+        android:padding="15dp" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/SignInFirebase"
-            android:textAppearance="?android:textAppearanceLarge" />
 
-        <EditText
-            android:layout_margin="15dp"
-            android:id="@+id/editTextEmail"
+    <Button
+        android:id="@+id/buttonSignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textInputLayout"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_background"
+        android:text="Sign in"
+        android:textColor="@color/firebasesigninBackground" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="Firebase Login"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/editTextEmail"
+        app:hintEnabled="true"
+        android:hint="Password...">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:hint="Syötä sähköpostisi"
-            android:inputType="textEmailAddress" />
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextEmail"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/input_background"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+</android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:textAlignment="center"
+        android:text="Etkö ole vielä rekisteröitynyt?"
+        android:id="@+id/textViewSignup"
+        android:layout_below="@+id/buttonSignin"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="336dp"
-            android:layout_height="match_parent"
-            app:passwordToggleEnabled="true"
-            app:passwordToggleDrawable="@drawable/icon_selector"
-            app:hintEnabled="true">
-
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/editTextPassword"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:hint="@string/syotasalasanasi"
-                android:inputType="textPassword" />
-        </android.support.design.widget.TextInputLayout>
-
-        <Button
-            android:layout_margin="15dp"
-            android:id="@+id/buttonSignin"
-            android:text="Kirjaudu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:textAlignment="center"
-            android:text="Etkö ole vielä rekisteröitynyt?"
-            android:id="@+id/textViewSignup"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
 
 </RelativeLayout>
